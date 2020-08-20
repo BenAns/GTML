@@ -32,11 +32,21 @@ namespace GTML
 
 			// Miscellaneous members
 			bool initialised;
+
+			// Methods to do with file operations
+			std::ifstream openFileRead(std::string filename);
+			bool checkFileType(std::ifstream tableFile);
+			void loadFileData(std::ifstream tableFile);
+
+			std::ofstream openFileWrite(std::string filename);
+			void saveFileData(std::ofstream tableFile);
 	};
 }
 
+#include "tableExceptions.hpp"
 #include "constructorsAndDestructors.hpp"
 #include "useTableMethods.hpp"
 #include "createTableMethods.hpp"
+#include "fileMethods.hpp"
 
 #endif

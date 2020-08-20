@@ -4,5 +4,6 @@
 
 int main()
 {
+	GTML::table<int> tbl;
 	return 0;
 }
