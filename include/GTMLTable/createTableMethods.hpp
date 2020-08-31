@@ -7,7 +7,7 @@
 
 // Creates a table from a normal function
 template<typename inputType, typename outputType>
-void GTML::table<inputType, outputType>::createTable(inputType start, inputType end, inputType step, outputType(*func)(inputType funcInput))
+void GTML::table<inputType, outputType>::createTable(inputType start, inputType end, inputType step, std::function<outputType(inputType funcInput)> func)
 {
 	// Allocates the memory for the table
 	uint64_t entries = static_cast<uint64_t>((end - start) / step) + 1;

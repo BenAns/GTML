@@ -20,7 +20,7 @@ namespace GTML
 			void loadFile(std::string filename);
 			void saveFile(std::string filename);
 
-			void createTable(inputType start, inputType end, inputType step, outputType(*func)(inputType funcInput));
+			void createTable(inputType start, inputType end, inputType step, std::function<outputType(inputType funcInput)> func);
 
 			// Methods to do with using the table
 			outputType operator()(inputType funcInput) const;

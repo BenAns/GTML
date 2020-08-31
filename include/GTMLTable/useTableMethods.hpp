@@ -9,7 +9,7 @@
 template<typename inputType, typename outputType>
 outputType GTML::table<inputType, outputType>::operator()(inputType funcInput) const
 {
-	uint64_t index = static_cast<uint64_t>((funcInput - startValue) / stepValue);
+	uint64_t index = static_cast<uint64_t>((funcInput - start) / end);
 	return tableData[index];
 }
 

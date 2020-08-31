@@ -4,6 +4,7 @@
 #include <iostream>
 #include <functional>
 #include <vector>
+#include <tuple>
 #include <GTML.hpp>
 
 // File to declare unit test procedures, declare testing-related structs and define the unitTests array
